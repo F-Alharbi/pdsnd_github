@@ -9,6 +9,9 @@
 ### Description
 **The project simulates a bikeshare system where users can rent bicycles in different locations around a city. The project includes data analysis of the bikeshare usage in three different cities: Chicago, New York City, and Washington D.C.**
 
+### Objective
+***The goal of the project is to use the data provided to answer several questions about the bikeshare usage such as the most popular times of use, the most popular stations, and the overall usage patterns.***
+
 ### Files used
 <mark>Python file:</mark><br>
 - bikeshare.py
