@@ -26,3 +26,4 @@
 
 - <a href="https://www.tutorialspoint.com/python/index.htm">Python Tutorial</a>
 - <a href="https://www.javatpoint.com/python-tutorial">Python Tutorial | Python Programming Language</a>
+- <a href="https://www.guru99.com/python-tutorials.html">Python Tutorial for Beginners</a>
