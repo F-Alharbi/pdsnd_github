@@ -1,6 +1,5 @@
 import time
 import pandas as pd
-import numpy as np
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -31,7 +30,7 @@ def get_filters():
         if city not in CITY_DATA.keys(): #Check the city availability
             print("\nInput is wrong, select the correct City!!!")
 
-    print(f"\nSelected city:-> {city.title()}.")
+    print("\nSelected city:-> {}.".format(city.title()))
 
 
     # Get month from the user
@@ -48,7 +47,7 @@ def get_filters():
             print("\Input is wrong. select the correct Month!!!")
             print("\nRestarting...")
 
-    print(f"\nSelected month:-> {month.title()}.")
+    print("\nSelected month:-> {}.".format(month.title()))
 
 
     # Get day from the user
@@ -65,7 +64,7 @@ def get_filters():
             print("\nInput is wrong. select the correct Day!!!")
             print("\nRestarting...")
 
-    print(f"\nSelected day:-> {day.title()}.")
+    print("\nSelected day:-> {}.".format(day.title()))
     print(f"\nInformation shall be displayed for: {city.upper()}, month/s: {month.upper()} and day/s: {day.upper()}.")
     print('-'*40)
 
@@ -233,10 +232,14 @@ def user_stats(df):
 
 
 def display_raw_data(df):
-    
+    # make a list of selection yes or no
     user_response = ['yes', 'no']
+    # define a rawdata string variable
     rawdata = ''
+    # define an integer variable and initialize it
     counter = 0
+
+    # apply while loop in the user response list
     while rawdata not in user_response:
         print("\nDo you want to display the raw data? Yes or No")
         rawdata = input().lower()
@@ -248,7 +251,7 @@ def display_raw_data(df):
             print("\nRestart\n")
             print(".......")
 
-    
+    # this part shall be occured once the user select yes
     while rawdata == 'yes':
         print("Do you want to display more raw data?")
         counter += 5
